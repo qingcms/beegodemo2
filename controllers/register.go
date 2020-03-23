@@ -7,4 +7,3 @@ import (
 type RegisterController struct {
 	beego.Controller
 }
-

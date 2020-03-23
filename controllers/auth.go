@@ -4,11 +4,8 @@ type AuthController struct {
 	BaseController
 }
 
+func (this *AuthController) Get() {
 
-
-func (this *AuthController) Get () {
-
-	this.TplName="user/list.tpl"
+	this.TplName = "user/list.tpl"
 
 }
-

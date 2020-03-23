@@ -2,24 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="041d0d9d-87e6-497d-833e-2d7b1acafeba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/auth/edit.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/auth/list.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/role/userlist.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/user/edit.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/user/list.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beegodemo.exe" beforeDir="false" afterPath="$PROJECT_DIR$/beegodemo.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/base.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/base.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/index.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/index.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/login.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/login.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/register.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/register.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/role.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/role.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/utils/crypto.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/utils/crypto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/auth.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/role.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/role.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/footdatatable.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/footdatatable.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user/useredit.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/role/edit.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user/userlist.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/role/list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/default_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/default_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,13 +47,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -83,14 +80,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="700" y="328" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1584442151707" />
-    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1584513286611">
+    <state x="719" y="392" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1584942723756">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="278" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1584513286611" />
-    <state x="580" y="109" width="759" height="822" key="find.popup" timestamp="1584696885375">
+    <state x="719" y="392" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1584942723756" />
+    <state x="620" y="317" key="EditFileWatcherDialog" timestamp="1584941164666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="580" y="109" width="759" height="822" key="find.popup/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1584696885375" />
+    <state x="620" y="317" key="EditFileWatcherDialog/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1584941164666" />
+    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1584945182055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="278" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1584945182055" />
+    <state x="808" y="170" key="SettingsEditor" timestamp="1584942815092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="808" y="170" key="SettingsEditor/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1584942815092" />
+    <state x="580" y="109" width="759" height="822" key="find.popup" timestamp="1584940284789">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="580" y="109" width="759" height="822" key="find.popup/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1584940284789" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584691626040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
